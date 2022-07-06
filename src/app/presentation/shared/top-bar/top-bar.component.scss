@@ -1,0 +1,14 @@
+.header__menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(181, 14, 214);
+  .menu__banner {
+    width: 200px;
+    display: flex;
+    .menu__img {
+      width: 100%;
+    }
+  }
+}
