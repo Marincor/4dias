@@ -53,10 +53,8 @@ cleanForm() {
         web_site: this.newCompanyForm.value.web_site,
         source: this.newCompanyForm.value.source,
       };
-      console.log(obj);
       this.companiesUseCases.registerCompany(obj).subscribe(
         (res) => {
-          console.log('result', res);
           setTimeout(() => {
             this.loading = false;
           }, 1500);
@@ -70,7 +68,6 @@ cleanForm() {
           console.log('err', err.error.message);
           let message = ""
           if(err.error.message === "This company is already registered") {
-            console.log("68")
             message = "Essa empresa já foi sugerida e ainda está em análise!"
           } else {
             message = "Algo deu errado, por favor tente novamente mais tarde, ou contacte o idealizador desse projeto!"
@@ -85,8 +82,4 @@ cleanForm() {
     }
   }
 
-  onchangeInput(e: any) {
-    console.log(typeof e);
-    console.log(e);
-  }
 }
