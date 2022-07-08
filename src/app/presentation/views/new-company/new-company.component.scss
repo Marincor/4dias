@@ -1,0 +1,35 @@
+.new-company__title {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: black;
+}
+
+.new-company__form {
+  width: 80vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  margin: 0 auto;
+}
+
+.new-company__input {
+  margin: 2rem 0rem;
+}
+
+.p-inputtext {
+  width: 300px !important;
+}
+
+.new-company__btn {
+  margin: 1rem 0rem;
+  width: 300px !important;
+}
+
+.new-company__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0rem 5px;
+}

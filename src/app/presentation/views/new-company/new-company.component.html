@@ -1,0 +1,27 @@
+<section class="new-company__actions">
+  <h2 class="new-company__title">Cadastrar nova empresa</h2>
+  <button title="Voltar para a home" pButton pRipple type="button" [routerLink]="'/'" icon="pi pi-home" class="p-button-rounded p-button-help home__btn-company" ></button>
+</section>
+
+<form *ngIf="!loading" class="new-company__form" [formGroup]="newCompanyForm" (submit)="this.registerNewCompany()">
+  <span class="p-float-label">
+    <input id="float-input-company" required formControlName="company_name" name="company_name" type="text" pInputText />
+    <label for="float-input-company">Empresa *</label>
+  </span>
+
+  <span class="p-float-label new-company__input">
+    <input  required id="float-input-site"  name="web_site" formControlName="web_site" type="text" pInputText />
+    <label for="float-input-site">Site *</label>
+  </span>
+
+  <span class="p-float-label">
+    <input id="float-input-midia" formControlName="source" name="source" pTooltip="Informe uma fonte de noticia de que a empresa aderiu ao trabalho de 4 dias, pode ser site, post, noticia etc." type="text" pInputText />
+    <label for="float-input-midia">Fonte</label>
+  </span>
+
+  <button pTooltip="Ao enviar para análise, iremos verificar sua sugestão. Caso aprovada, aparecerá na tabela de empresas da pagina inicial." pButton class="new-company__btn" type="submit" label="Enviar para análise" ></button>
+
+</form>
+<app-spinner *ngIf="loading"></app-spinner>
+
+<p-toast  position="center" key="info"></p-toast>

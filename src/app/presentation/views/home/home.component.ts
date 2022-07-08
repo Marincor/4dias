@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+
+
   constructor() {}
 
   ngOnInit() {}
@@ -14,4 +17,7 @@ export class HomeComponent implements OnInit {
     let companies = document.getElementById('section-company');
     if (companies) companies.scrollIntoView({ behavior: 'smooth' });
   };
+
+
+
 }

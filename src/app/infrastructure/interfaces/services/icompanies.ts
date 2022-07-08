@@ -9,3 +9,9 @@ export interface ICompanies {
 export interface ICompaniesResponse {
   result: ICompanies[]
 }
+
+export interface ICompanyRequest {
+  company_name: string;
+  web_site: string;
+  source?: string;
+}

@@ -34,3 +34,26 @@
   }
 
 }
+
+.home__edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.home__btn-edit {
+  background-color: white;
+  color: #A855F7;
+}
+
+.home__btn-edit:hover {
+  background-color: #A855F7;
+  color: white;
+}
+
+.home__btn-company:hover {
+  background-color: white !important;
+  color: #A855F7 !important;
+}
+

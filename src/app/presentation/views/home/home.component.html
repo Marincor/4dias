@@ -1,13 +1,20 @@
 
-<main class="home__container">
+<main  class="home__container">
+
   <h1 class="home__title">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius, eros eu consectetur congue, magna ligula faucibus purus, et tincidunt libero sapien a lorem. Suspendisse pharetra ut nisl ac egestas. Sed viverra vitae ex interdum dapibus. In pretium magna non maximus dapibus. Integer viverra turpis sed ipsum placerat egestas. Nullam sit amet nulla nec justo venenatis suscipit. Phasellus sit amet vestibulum nisl, scelerisque sodales ante. Praesent lacus sapien, mattis lacinia ligula pretium, finibus elementum massa.
+    o 4 dias é um projeto open source criado por <a href="https://github.com/Marincor" title="Github Marincor" target="_blank">@Marincor</a> com o propósito de agregar todas as empresas brasileiras (tech ou não) que aderiram ao novo modelo de trabalho de 4 dias por semana, que como provado por diversas <a href="https://vocerh.abril.com.br/coluna/isis-borge/os-beneficios-da-semana-de-4-dias-de-trabalho-para-as-empresas/" title="Noticia abril" target="_blank">pesquisas ao redor do mundo</a>, Obtiveram como resultado um aumento de produtividade e mais importante ainda: maior qualidade de vida para os funcionários!
   </h1>
 
-  <section class="home__actions">
-    <button title="ir para empresas" pButton pRipple type="button" icon="pi pi-arrow-down" class="p-button-rounded p-button-help home__btn" (click)="scrollToCompany()"></button>
+  <section class="home__edit">
+    <button title="Sugerir uma nova empresa para o registro" pButton pRipple type="button" icon="pi pi-plus" class="p-button-rounded p-button-help home__btn-edit" [routerLink]="['/new-company']" ></button>
   </section>
+
+  <section class="home__actions">
+    <button title="ir para empresas" pButton pRipple type="button" icon="pi pi-arrow-down" class="p-button-rounded p-button-help home__btn-company" (click)="scrollToCompany()"></button>
+  </section>
+
 </main>
 
 
-<app-companies></app-companies>
+<app-companies ></app-companies>
+

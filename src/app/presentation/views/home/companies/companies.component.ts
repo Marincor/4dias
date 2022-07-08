@@ -9,7 +9,8 @@ import { CompaniesUseCases } from 'src/app/usecases/companies.usecases';
 })
 export class CompaniesComponent implements OnInit {
   listCompanies?: ICompanies[];
-
+  hasCompany: boolean = false;
+  loading: boolean = true;
   constructor(private companiesUseCases: CompaniesUseCases) {}
 
   ngOnInit() {
@@ -18,8 +19,13 @@ export class CompaniesComponent implements OnInit {
 
   getListCompanies() {
     this.companiesUseCases.getCompanies().subscribe((res) => {
-      this.setCompanies(res.result);
+      let filteredCompanies = res.result.filter(company => company.approved === true)
+      this.setCompanies(filteredCompanies);
+      if(res.result.length) {
+        this.hasCompany = true
+      }
     });
+    this.loading = false;
   }
 
   setCompanies(companies: ICompanies[]) {

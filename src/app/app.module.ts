@@ -10,14 +10,25 @@ import { CompaniesComponent } from './presentation/views/home/companies/companie
 import { CommonModule } from '@angular/common';
 import {  HttpClientModule } from '@angular/common/http';
 import {TableModule} from 'primeng/table';
-
+import { NewCompanyComponent } from './presentation/views/new-company/new-company.component';
+import { RouterModule } from '@angular/router';
+import {InputTextModule} from 'primeng/inputtext';
+import {TooltipModule} from 'primeng/tooltip';
+import {ProgressSpinnerModule} from 'primeng/progressspinner';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SpinnerComponent } from './presentation/shared/spinner/spinner.component';
+import {ToastModule} from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations"
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
     HomeComponent,
     CompanyComponent,
-    CompaniesComponent
+    CompaniesComponent,
+    NewCompanyComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -25,10 +36,17 @@ import {TableModule} from 'primeng/table';
     ButtonModule,
     CommonModule,
     HttpClientModule,
-    TableModule
+    TableModule,
+    RouterModule,
+    InputTextModule,
+    TooltipModule,
+    ProgressSpinnerModule,
+    ReactiveFormsModule,
+    ToastModule,
+    BrowserAnimationsModule
 
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
