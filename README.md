@@ -1,27 +1,21 @@
-# 4dias
+# ![apple-touch-icon](https://user-images.githubusercontent.com/84210050/178112882-7d574785-6ca3-46f6-8f8c-7fb5e094323f.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
+> Projeto open source 
 
-## Development server
+> Pode ver o repositório da api <a href="https://github.com/Marincor/4dias_api" target="_blank">aqui</a>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# 🛈 Sobre
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4 dias é um projeto open source criado por <a href="https://github.com/Marincor" target="_blank">@Marincor</a> com o propósito de agregar todas as empresas brasileiras (tech ou não) que aderiram ao novo modelo de trabalho de 4 dias por semana, que como provado por diversas pesquisas ao redor do mundo, obtiveram como resultado um aumento de produtividade e mais importante ainda: maior qualidade de vida para os funcionários!
 
-## Build
+- Conhece alguma empresa que aderiu ao modelo e ainda não está na lista do site? registe por <a href="https://4dias.vercel.app/new-company" target="_blank" >aqui</a>;
+- Tem alguma ideia para melhorar esse projeto (frontend ou backend) ? Basta dar um fork no reposítorio em que deseja contribuir, fazer sua alteração e subir um Pull Request. Seu nome e perfil serão linkados neste ReadMe como contribuidor.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+# ⚙ Tecnologias
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<img src="https://cdn.worldvectorlogo.com/logos/angular-3.svg" alt="Angular" title="Angular" width="150px" />   <img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="Angular" title="Sass" width="140px" />  <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="TypeScript" title="TypeScript" width="100px" /> 
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
