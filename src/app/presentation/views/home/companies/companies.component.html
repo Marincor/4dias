@@ -30,9 +30,11 @@
       </ng-template>
     </p-table>
   </div>
+
   <div *ngIf="!hasCompany && !loading" class="empty__companies">
     Nenhuma empresa encontrada no momento!
   </div>
+
   <app-spinner *ngIf="loading"></app-spinner>
   <span id="section-company"></span>
 </section>

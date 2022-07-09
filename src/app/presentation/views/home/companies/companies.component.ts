@@ -15,6 +15,9 @@ export class CompaniesComponent implements OnInit {
 
   ngOnInit() {
     this.getListCompanies();
+    setTimeout(() => {
+        this.loading = false
+    }, 1000);
   }
 
   getListCompanies() {
@@ -25,7 +28,7 @@ export class CompaniesComponent implements OnInit {
         this.hasCompany = true
       }
     });
-    this.loading = false;
+
   }
 
   setCompanies(companies: ICompanies[]) {
